@@ -1,0 +1,432 @@
+/*
+
+TemplateMo 564 Plot Listing
+
+https://templatemo.com/tm-564-plot-listing
+
+*/
+
+/* ---------------------------------------------
+Table of contents
+------------------------------------------------
+01. font & reset css
+02. reset
+03. global styles
+04. header
+05. banner
+06. features
+07. testimonials
+08. contact
+09. footer
+10. preloader
+11. search
+12. portfolio
+
+--------------------------------------------- */
+/* 
+---------------------------------------------
+font & reset css
+--------------------------------------------- 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* 
+---------------------------------------------
+reset
+--------------------------------------------- 
+*/
+
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 50%;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* img {
+  margin-bottom: -3px;
+  width: 100%;
+  overflow: hidden;
+} */
+
+/* 
+---------------------------------------------
+global styles
+--------------------------------------------- 
+*/
+
+::selection {
+  background: #03a4ed;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #03a4ed;
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  .mobile-top-fix {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  .mobile-bottom-fix {
+    margin-bottom: 30px;
+  }
+  .mobile-bottom-fix-big {
+    margin-bottom: 60px;
+  }
+}
+
+.page-section {
+  margin-top: 120px;
+}
+
+.section-heading h2 {
+  font-size: 35px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+  color: #2a2a2a;
+  font-weight: 700;
+  position: relative;
+  z-index: 2;
+  line-height: 44px;
+}
+
+.section-heading h6 {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  color: #8d99af;
+}
+
+.main-white-button a {
+  display: inline-block;
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  color: #2a2a2a;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 7px;
+  letter-spacing: 0.25px;
+  transition: all .3s;
+}
+
+.main-white-button a i {
+  margin-right: 10px;
+  width: 22px;
+  height: 22px;
+  background-color: #8d99af;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.main-white-button a:hover {
+  background-color: #8d99af;
+  color: #fff;
+}
+/* 
+---------------------------------------------
+Banner Style
+--------------------------------------------- 
+*/
+
+.main-banner {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(./banner-bg.jpg);
+  padding: 290px 0px 180px 0px;
+  position: relative;
+  overflow: hidden;
+  margin-left: -20%;
+  margin-right: -20%;
+}
+
+.main-banner .top-text {
+  text-align: center;
+}
+
+.main-banner .top-text h6 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.main-banner .top-text h2 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 800;
+  text-transform: capitalize;
+  margin-top: 15px;
+  margin-bottom: 45px;
+}
+
+.main-banner ul.categories {
+  width: 100%;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.main-banner ul.categories li {
+  display: inline-block;
+  text-align: center;
+  width: 18%;
+}
+
+.main-banner ul.categories li a {
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.main-banner ul.categories li .icon {
+  display: block;
+  margin: 0 auto 12px auto;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 62px;
+  color: #8d99af;
+  background-color: #fff;
+  transition: all .5s;
+}
+
+.main-banner ul.categories li a:hover .icon {
+  background-color: #2b2d42;
+}
+
+.main-banner ul.categories li .icon img {
+  max-width: 27px;
+}
+
+form#search-form {
+  background-color: #fff;
+  padding: 0px 0px 0px 30px;
+  width: 100%;
+  border-radius: 7px;
+  display: inline-block;
+  text-align: center;
+}
+
+form#search-form select,
+form#search-form input {
+  width: 100%;
+  height: 36px;
+  background-color: transparent;
+  border: none;
+  color: #2a2a2a;
+  font-size: 15px;
+  outline: none;
+}
+
+.form-select:focus {
+  box-shadow: none;
+}
+
+form#search-form input.searchText {
+  border-left: 1px solid #8d99af;
+  border-right: 1px solid #8d99af;
+  padding: 0px 30px;
+}
+
+form#search-form input::placeholder {
+  color: #2a2a2a;
+  font-size: 15px;
+}
+
+form#search-form button {
+  width: 100%;
+  height: 100%;
+  background-color: #8d99af;
+  border: none;
+  padding: 15px;
+  color: #fff;
+  font-size: 15px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+form#search-form button i {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #8d99af;
+  display: inline-block;
+  text-align: center;
+  line-height: 38px;
+  margin-right: 10px;
+}
+
+
+
+/*
+---------------------------------------
+Popular Categories
+---------------------------------------
+*/
+
+.popular-categories {
+  margin-top: 120px;
+}
+
+.popular-categories .section-heading {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.popular-categories .naccs {
+  position: relative;
+  background-color: #2b2d42;
+  border-radius: 7px;
+}
+
+.popular-categories .icon {
+  display: inline-block;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 62px;
+  color: #8d99af;
+  background-color: #fff;
+  margin-right: 15px;
+}
+
+.popular-categories .icon img {
+  max-width: 27px;
+}
+
+.popular-categories .naccs .menu div.first-thumb {
+  border-top-left-radius: 7px;
+}
+
+.popular-categories .naccs .menu div.last-thumb {
+  margin-bottom: 0px;
+  border-bottom-left-radius: 7px;
+}
+
+.popular-categories .naccs .menu div {
+  color: #fff;
+  font-size: 15px;
+  background-color: #8d99af;
+  margin-bottom: 1px;
+  height: 126px;
+  text-align: left;
+  padding: 0px 15px;
+  line-height: 126px;
+  cursor: pointer;
+  position: relative;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.popular-categories .naccs .menu div.active,
+.popular-categories .naccs .menu div.active .thumb {
+  background-color: #2b2d42;
+}
+
+.popular-categories ul.nacc {
+  position: relative;
+  min-height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.popular-categories ul.nacc li {
+  opacity: 0;
+  transform: translateX(-50px);
+  position: absolute;
+  list-style: none;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.popular-categories ul.nacc li.active {
+  transition-delay: 0.3s;
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.popular-categories ul.nacc li {
+  width: 100%;
+}
+
+.popular-categories .nacc .thumb .left-text {
+  margin-left: 30px;
+}
+
+.popular-categories .nacc .thumb .left-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 35px;
+  margin-bottom: 30px;
+}
+
+.popular-categories .nacc .thumb .left-text p {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.popular-categories .nacc .thumb .right-image {
+  padding: 60px;
+  display: inline-flex;
+} 
+
+.popular-categories .nacc .thumb img {
+  border-radius: 7px;
+}
+
+.popular-categories .nacc .thumb .left-text .main-white-button a{
+  width: 100%;
+  text-align: center;
+}
